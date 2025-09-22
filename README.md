@@ -3,12 +3,26 @@
 
 This project implements a **Speech Emotion Recognition (SER)** system using Facebook AI’s **Wav2Vec 2.0** model. It extracts deep contextual audio embeddings from raw waveform speech data and classifies emotions using a fine-tuned classifier.
 
-## 🔍 Overview
+---
 
-Emotion recognition from speech has broad applications in **human-computer interaction**, **call center analysis**, **mental health monitoring**, and more. Traditional models rely on hand-crafted acoustic features, but this project uses **self-supervised representation learning** via Wav2Vec 2.0 for superior performance.
+## 🔍 Overview
+Emotion recognition from speech has real-world applications in:
+- 🤖 Human-Computer Interaction (empathetic chatbots, voice assistants)  
+- 📞 Call Center Analytics (detecting frustration in real-time)  
+- 🧠 Mental Health Monitoring (tracking stress & mood changes)  
+
+Traditional SER methods relied on **hand-crafted acoustic features** (MFCCs, pitch, prosody), but this project leverages **self-supervised learning (SSL)** via **Wav2Vec 2.0** for improved robustness and accuracy.
 
 ---
 
+## 🚀 Features
+- Pretrained Wav2Vec2.0 for extracting audio embeddings  
+- Fine-tuned emotion classification head  
+- Support for multiple datasets (RAVDESS, Emo-DB, IEMOCAP, etc.)  
+- End-to-end pipeline: training → evaluation → inference  
+- Visualization of confusion matrix & accuracy curves  
+
+---
 ## 🎧 Dataset
 
 This project supports datasets such as:
