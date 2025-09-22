@@ -57,7 +57,16 @@ This project supports datasets such as:
 <img width="170" height="132" alt="image" src="https://github.com/user-attachments/assets/5434dcde-b2fc-4752-b6c1-725cd67ba771" />
 
 
----
+| Model             | Accuracy | Dataset |
+| ----------------- | -------- | ------- |
+| MFCC + SVM        | 65%      | RAVDESS |
+| Wav2Vec2.0 + FFNN | 100%      | RAVDESS |
+
+Confusion Matrix shows better separation between happy and neutral after Wav2Vec2.0 fine-tuning.
+
+Before (hand-crafted features): poor generalization.
+
+After (Wav2Vec2.0): robust across different speakers & noise levels.
 
 ## 🚀 Future Work
 
@@ -74,3 +83,6 @@ This project supports datasets such as:
 * torchaudio, librosa
 
 ---
+**📜** **License**
+
+Distributed under the Apache 2.0 License. See LICENSE for more information.
